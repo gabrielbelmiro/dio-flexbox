@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos align-content</title>
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+        .container {
+            height: 350px;
+            max-width: 250px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item {
+            background-color: orangered;
+            margin: 5px;
+            padding: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+    
+        }
+
+        .strecth {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+        .space-between {
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Fundamentos align-content</h1>
+    <p>Tipos de alinhamento</p>
+    <ul>
+        <li><b>center:</b> alinhamento dos itens ao centro</li>
+        <li><b>stretch:</b> é o padrão e os intens crescem igualmente</li>
+        <li><b>flex-start:</b> alinhamento dos itens no inicio</li>
+        <li><b>flex-end:</b> alinhamento dos intens no final</li>
+        <li><b>space-between:</b> cria um espaçamento igual entre os elementos</li>
+        <li><b>space-around: os espaçamentos do meio são duas vezes maiores que o inicio e final</b></li>
+    </ul>
+    
+    <p>strecth</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum, dolor  libero ut  enim ex voluptas distinctio blanditiis. Nostrum ipsum natus earum.</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum, dolor  accusantium facere desuptas distinctio blanditiis. Nostrum ipsum natus earum.</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+    </div>
+    
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum, dolor  accusantium facere desuptas distinctio blanditiis. Nostrum ipsum natus earum.</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum, dolor  accusantium facere desuptas distinctio blanditiis. Nostrum ipsum natus earum.</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum, dolor  accusantium facere desuptas distinctio blanditiis. Nostrum ipsum natus earum.</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item">Lorem ipsum, dolor  accusantium facere desuptas distinctio blanditiis. Nostrum ipsum natus earum.</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+    </div>
+    
+</body>
+</html>
